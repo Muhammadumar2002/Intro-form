@@ -35,7 +35,9 @@
   font-display: swap;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -53,7 +55,7 @@ body {
 }
 .container {
   width: 100%;
-  max-width: 1182px;
+  max-width: 1440px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -62,17 +64,91 @@ body {
 
 /* FORM-SECTION */
 
+.data-section {
+  background-color: #F1F4FF;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+}
+.data-container {
+}
+.data-list {
+  margin-right: 12px;
+}
+.data-item {
+  width: 100%;
+  max-width: 570px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-image: url("../img/data-list-black.png");
+  color: #fff;
+  padding-top: 55px;
+  padding-right: 121px;
+  padding-bottom: 203px ;
+  padding-left: 60px;
+}
+.data-title {
+  border: 1px solid #fff;
+  font-family: "Inter";
+  padding: 5px 15px;
+  margin: 0;
+  opacity: 0.8;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 41px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+.data-heading {
+  width: 100%;
+  max-width: 389px;
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin: 0;
+}
+.data-text {
+  line-height: 26px;
+  margin: 0;
+  max-width: 347px;
+  width: 100%;
+}
+.data-connecting-link {
+  display: block;
+  width: 100%;
+  max-width: 570px;
+  background-color: #4DC490;
+  color: #fff;
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 400;
+  padding: 29px 145px 28px 144px;
+  text-decoration: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  white-space: nowrap;
+}
+.data-connecting-link:hover {
+  opacity: 0.8;
+}
+.data {
+}
+.data-input {
+}
+.data-button {
+}
+.data-link {
+}
 
 
 
 
 
 
-
-
-
-
-/* @media
+@media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2),
@@ -80,6 +156,6 @@ only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
     .form-info-item{
-        background-image: url("../img/header-bg@2x.jpg");
+        background-image: url("../img/data-list-black@2x.png");
     }
-} */
+}
